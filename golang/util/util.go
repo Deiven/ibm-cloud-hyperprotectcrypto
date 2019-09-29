@@ -132,6 +132,9 @@ var (
 	OIDNamedCurveP256 = asn1.ObjectIdentifier{1, 2, 840, 10045, 3, 1, 7}
 	OIDNamedCurveP384 = asn1.ObjectIdentifier{1, 3, 132, 0, 34}
 	OIDNamedCurveP521 = asn1.ObjectIdentifier{1, 3, 132, 0, 35}
+    OIDNamedCurveSECP256K1 = asn1.ObjectIdentifier{1, 3, 132, 0, 10}
+    OIDNamedCurveED25519 = asn1.ObjectIdentifier{1, 3, 6, 1, 4, 1, 11591, 15, 1}
+    OIDNamedCurveEDDSA25519 = asn1.ObjectIdentifier{1, 3, 101, 112}
 	oidECPublicKey    = asn1.ObjectIdentifier{1, 2, 840, 10045, 2, 1}
 	oidRSAPublicKey   = asn1.ObjectIdentifier{1, 2, 840, 113549, 1, 1, 1}
 )

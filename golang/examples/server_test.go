@@ -370,7 +370,8 @@ func Example_signAndVerifyUsingECDSAKeyPair() {
 
 	cryptoClient := pb.NewCryptoClient(conn)
 
-	ecParameters, err := asn1.Marshal(util.OIDNamedCurveP256)
+	//ecParameters, err := asn1.Marshal(util.OIDNamedCurveP256)
+	ecParameters, err := asn1.Marshal(util.OIDNamedCurveSECP256K1)
 	if err != nil {
 		panic(fmt.Errorf("Unable to encode parameter OID: %s", err))
 	}
@@ -457,7 +458,8 @@ func Example_signAndVerifyToTestErrorHandling() {
 
 	cryptoClient := pb.NewCryptoClient(conn)
 
-	ecParameters, err := asn1.Marshal(util.OIDNamedCurveP256)
+	//ecParameters, err := asn1.Marshal(util.OIDNamedCurveP256)
+	ecParameters, err := asn1.Marshal(util.OIDNamedCurveSECP256K1)
 	if err != nil {
 		panic(fmt.Errorf("Unable to encode parameter OID: %s", err))
 	}
@@ -648,7 +650,8 @@ func Example_deriveKey() {
 	cryptoClient := pb.NewCryptoClient(conn)
 
 	// Generate ECDH key pairs for Alice and Bob
-	ecParameters, err := asn1.Marshal(util.OIDNamedCurveP256)
+	//ecParameters, err := asn1.Marshal(util.OIDNamedCurveP256)
+	ecParameters, err := asn1.Marshal(util.OIDNamedCurveSECP256K1)
 	if err != nil {
 		panic(fmt.Errorf("Unable to encode parameter OID: %s", err))
 	}
