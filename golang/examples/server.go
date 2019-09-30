@@ -29,12 +29,14 @@ var ep11_callOpts = []grpc.DialOption{
 	}),
 }
 
-func GenerateS256Seed() {
-
+func GenerateS256Seed() []byte {
+	//TODO:: To be implemented
+	return nil
 }
 
-func DeriveS256KeyPair() {
-
+func DeriveS256KeyPair(seed []byte) ([]byte, []byte) {
+	//TODO:: To be implemented
+	return nil, nil
 }
 
 func GenerateS256KeyPair() ([]byte, []byte) {
